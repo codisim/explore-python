@@ -10,3 +10,8 @@ person['language'] = 'English'
 
 print(person.keys())
 print(person.values())
+
+
+
+for key, val in person.items():
+    print(f'{key} : {val}')
