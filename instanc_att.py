@@ -1,11 +1,14 @@
 class Shop:
-    cart = []     
+    shopping_mall = "Jamuna"
+
     def __init__(self, buyer):
         self.buyer = buyer
+        self.cart = []  # cart is an instance attribute
 
-    
+
     def add_to_card(self, item):
         self.cart.append(item)
+
 
 she = Shop("Tahar")
 she.add_to_card("phone")
