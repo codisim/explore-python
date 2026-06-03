@@ -20,8 +20,9 @@ class Bank:
             print(f'Boroloker baccha naki?? {self.max_wid} taha ki bang hat pat goto kore bose thakbe???')
         else:
             self.balance -= amount
-            print(f'Here is your withdraw money')
+            print(f'Here is your withdraw money and remain {self.get_balance()}')
+            print(f'Here is your withdraw money and remain {self.get_balance()}')
 
 
 ibbl = Bank(150000000)
-ibbl.withdraw(120000000000)
+ibbl.withdraw(120000)
