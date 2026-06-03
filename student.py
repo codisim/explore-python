@@ -21,6 +21,18 @@ class Teacher:
 
 
 
+class School:
+    def __init__(self, name):
+        self.name = name
+        self.teachers = []
+
+    def add_student(self, name, subject):
+        id = len(self.teachers) + 101
+        teacher = Teacher(id, name, subject)
+        self.teachers.append(teacher)
+
+
+
 khan = Student('Imran', 11, 11002)
 mia = Teacher(101, 'Nah Khan', 'DSA')
 
