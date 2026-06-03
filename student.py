@@ -10,6 +10,14 @@ class Student:
 
 
 
+class Teacher:
+    def __init__(self, id, name, subject):
+        self.id = id
+        self.name = name
+        self.subject = subject
+
+    def __repr__(self):
+        return f'Teacher name {self.name}, id: {self.id}, subject: {self.subject}'
 
 
 
