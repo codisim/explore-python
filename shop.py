@@ -13,3 +13,12 @@ she.add_to_card("cake")
 she.add_to_card("cha")
 
 print(she.cart)
+
+
+
+he = Shop("Nah")
+he.add_to_card("phone")
+he.add_to_card("cake")
+he.add_to_card("cha")
+
+print(he.cart)
