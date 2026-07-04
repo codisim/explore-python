@@ -1,31 +1,31 @@
 
 
-def solve():
-    line1 = input
-    if not line1:
-        return
-    
-    line2 = input()
-    if not line2:
-        return
-    a = map(int, line2)
-    
-    counts = {}
-    for x in a:
-        if x in counts:
-            counts[x] += 1
+
+def Good_Sequence():
+    n = int(input())
+    a = list(map(int, input().split()))
+
+    freq = {}
+
+    for i in range(n):
+        num = a[i]
+        if num in freq:
+            freq[num] += 1
         else:
-            counts[x] = 1
-            
+            freq[num] = 1
+
     removals = 0
-    
-    for x, count in counts.items():
-        if count >= x:
-            removals += (count - x)
-        else:
+
+    for x, count in freq.items():
+        if count < x:
             removals += count
-            
+        else:
+            removals += count - x
+
     print(removals)
 
-if __name__ == "__main__":
-    solve()
+
+Good_Sequence()
+
+
+
